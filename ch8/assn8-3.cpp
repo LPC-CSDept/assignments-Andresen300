@@ -2,7 +2,7 @@
 using namespace std;
 
 int findMin(int [], int, int);
-int printArray(int [], int);
+void printArray(int [], int);
 
 int main()
 {
@@ -24,9 +24,9 @@ int main()
 
 int findMin(int numbers[], int N, int ith)
 {
-	int min, minidx;
+	int min, minidx, i;
 	min = numbers[ith];
-    for(int i=ith ;i<N;i++)
+    for(i=ith ;i<N;i++)
 	{
 		if ( min > numbers[i] )
 		{
@@ -34,11 +34,13 @@ int findMin(int numbers[], int N, int ith)
 			minidx = i;
 		}
 	}
-	return i; // 1
+	return minidx; // 1
 }
 
-int printArray(int [], int x)
+void printArray(int a[], int x)
 {
-	for(int i = 0; i < int x; i++)
-  
+	for(int i = 0; i < x; i++){
+    cout << a[i] << "\t";
+  }
+  cout << "\n";
 }
