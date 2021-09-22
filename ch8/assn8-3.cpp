@@ -26,6 +26,9 @@ int findMin(int numbers[], int N, int ith)
 {
 	int min, minidx, i;
 	min = numbers[ith];
+	// minidx also should be initialized to "ith" value.
+	// because when the below "if" condition are not met, the mindix would be returned without the initial value.
+	
     for(i=ith ;i<N;i++)
 	{
 		if ( min > numbers[i] )
