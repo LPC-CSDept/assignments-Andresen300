@@ -32,6 +32,15 @@ void iniVectors (vector <int> &IDs, vector<string> &names, int N)
     for (int i=0; i<N; i++)
     {
         ifs >> IDs[i]>>names[i];
+
+		// In your vectordata.txt, there are 10 lines
+
+		// But in your for loop, you are tyring to run 10 iterations
+
+		// At the 4th iterations, you will meet ifs.fail()
+		
+
+
         if (ifs.fail())
         {
             cerr << "File Read Error\n";
