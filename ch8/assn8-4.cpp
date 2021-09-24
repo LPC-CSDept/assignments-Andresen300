@@ -37,7 +37,7 @@ void makeStudents (Students s[], int N)
     for (int i= 0; i<N; i++)
     {
         ifs >>s[i].sid >> s[i].sname;
-        for (int j=0; j=NUM_SCORES; j++)
+        for (int j=0; j<NUM_SCORES; j++)
         {
             ifs >> s[i]. scores[j];
         }
