@@ -28,7 +28,7 @@ int main()
 void makeStudents (Students s[], int N)
 {
     ifstream  ifs;
-    ifs.open("students8_4.txt");
+    ifs.open("students.txt");
     if (ifs.fail())
     {
         cerr << "File Open Error\n";
@@ -41,10 +41,10 @@ void makeStudents (Students s[], int N)
         {
             ifs >> s[i]. scores[j];
         }
-       // if (ifs.fail())
-        //{
-         //   cerr << "File Read Error\n";
-         //   exit = 0;
+        //if (ifs.fail())
+       // {
+            //cerr << "File Read Error\n";
+           // exit = 0;
        // }
     }
 }
