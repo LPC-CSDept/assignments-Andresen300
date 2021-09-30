@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -108,6 +109,8 @@ int binarySearch(int array[], int N, int target)
     return position;
 }
 =======
+=======
+>>>>>>> origin/main
 
 #include <iostream>
 #include <cstdlib>
@@ -188,4 +191,7 @@ int binarySearch(int array[], int N, int target)
 
 }
 
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
